@@ -1,7 +1,5 @@
 # Created by http://www.gitignore.io
 
-#!! ERROR: xco is undefined. Use list command to see defined gitignore types !!#
-
 ### Xcode ###
 build/
 *.pbxuser
