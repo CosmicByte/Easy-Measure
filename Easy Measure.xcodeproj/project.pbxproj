@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB2F8024193FE9E8005E8FEE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */; };
+		EB2F802F193FECEB005E8FEE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2F8028193FECEB005E8FEE /* logo.png */; };
+		EB3776F0194005D70078BC99 /* done-p.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EA194005D70078BC99 /* done-p.png */; };
+		EB3776F1194005D70078BC99 /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EB194005D70078BC99 /* done.png */; };
+		EB3776F2194005D70078BC99 /* measure-distance-p.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EC194005D70078BC99 /* measure-distance-p.png */; };
+		EB3776F3194005D70078BC99 /* measure-distance.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776ED194005D70078BC99 /* measure-distance.png */; };
+		EB3776F4194005D70078BC99 /* stop-measuring-p.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EE194005D70078BC99 /* stop-measuring-p.png */; };
+		EB3776F5194005D70078BC99 /* stop-measuring.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EF194005D70078BC99 /* stop-measuring.png */; };
+		EB3776F9194005DD0078BC99 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F6194005DD0078BC99 /* 58.png */; };
+		EB3776FA194005DD0078BC99 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F7194005DD0078BC99 /* 80.png */; };
+		EB3776FB194005DD0078BC99 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F8194005DD0078BC99 /* 120.png */; };
+		EBBD8B5D193F4D360074321B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B5C193F4D360074321B /* AppDelegate.swift */; };
+		EBBD8B62193F4D360074321B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBD8B60193F4D360074321B /* Main.storyboard */; };
+		EBBD8B64193F4D360074321B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBD8B63193F4D360074321B /* Images.xcassets */; };
+		EBBD8B70193F4D370074321B /* Easy_MeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B6F193F4D370074321B /* Easy_MeasureTests.swift */; };
+		EBBD8B7A193F4DE80074321B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B79193F4DE80074321B /* MenuViewController.swift */; };
+		EBDA0D5A193FBE8F00C086E7 /* MeasuringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */; };
+		EBDA0D5C193FBE9C00C086E7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBBD8B6A193F4D360074321B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBBD8B4F193F4D360074321B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBD8B56193F4D360074321B;
+			remoteInfo = "Easy Measure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		EB2F8028193FECEB005E8FEE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = images/logo.png; sourceTree = "<group>"; };
+		EB3776EA194005D70078BC99 /* done-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "done-p.png"; path = "images/buttons/done-p.png"; sourceTree = "<group>"; };
+		EB3776EB194005D70078BC99 /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = done.png; path = images/buttons/done.png; sourceTree = "<group>"; };
+		EB3776EC194005D70078BC99 /* measure-distance-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "measure-distance-p.png"; path = "images/buttons/measure-distance-p.png"; sourceTree = "<group>"; };
+		EB3776ED194005D70078BC99 /* measure-distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "measure-distance.png"; path = "images/buttons/measure-distance.png"; sourceTree = "<group>"; };
+		EB3776EE194005D70078BC99 /* stop-measuring-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stop-measuring-p.png"; path = "images/buttons/stop-measuring-p.png"; sourceTree = "<group>"; };
+		EB3776EF194005D70078BC99 /* stop-measuring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stop-measuring.png"; path = "images/buttons/stop-measuring.png"; sourceTree = "<group>"; };
+		EB3776F6194005DD0078BC99 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = images/icons/58.png; sourceTree = "<group>"; };
+		EB3776F7194005DD0078BC99 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = images/icons/80.png; sourceTree = "<group>"; };
+		EB3776F8194005DD0078BC99 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = images/icons/120.png; sourceTree = "<group>"; };
+		EBBD8B57193F4D360074321B /* Easy Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBD8B5B193F4D360074321B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBD8B5C193F4D360074321B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBBD8B61193F4D360074321B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBBD8B63193F4D360074321B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBBD8B69193F4D360074321B /* Easy MeasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy MeasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBD8B6E193F4D370074321B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBD8B6F193F4D370074321B /* Easy_MeasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_MeasureTests.swift; sourceTree = "<group>"; };
+		EBBD8B79193F4DE80074321B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringViewController.swift; sourceTree = "<group>"; };
+		EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBBD8B54193F4D360074321B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBD8B66193F4D360074321B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB2F8025193FECE0005E8FEE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EB3776E9194005CB0078BC99 /* icons */,
+				EB3776E8194005C70078BC99 /* buttons */,
+				EB2F8028193FECEB005E8FEE /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		EB3776E8194005C70078BC99 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EB3776EA194005D70078BC99 /* done-p.png */,
+				EB3776EB194005D70078BC99 /* done.png */,
+				EB3776EC194005D70078BC99 /* measure-distance-p.png */,
+				EB3776ED194005D70078BC99 /* measure-distance.png */,
+				EB3776EE194005D70078BC99 /* stop-measuring-p.png */,
+				EB3776EF194005D70078BC99 /* stop-measuring.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		EB3776E9194005CB0078BC99 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				EB3776F6194005DD0078BC99 /* 58.png */,
+				EB3776F7194005DD0078BC99 /* 80.png */,
+				EB3776F8194005DD0078BC99 /* 120.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		EBBD8B4E193F4D360074321B = {
+			isa = PBXGroup;
+			children = (
+				EBBD8B59193F4D360074321B /* Easy Measure */,
+				EBBD8B6C193F4D360074321B /* Easy MeasureTests */,
+				EBBD8B58193F4D360074321B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBBD8B58193F4D360074321B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD8B57193F4D360074321B /* Easy Measure.app */,
+				EBBD8B69193F4D360074321B /* Easy MeasureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBBD8B59193F4D360074321B /* Easy Measure */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F8025193FECE0005E8FEE /* images */,
+				EBBD8B5C193F4D360074321B /* AppDelegate.swift */,
+				EBBD8B60193F4D360074321B /* Main.storyboard */,
+				EBBD8B63193F4D360074321B /* Images.xcassets */,
+				EBBD8B5A193F4D360074321B /* Supporting Files */,
+				EBBD8B79193F4DE80074321B /* MenuViewController.swift */,
+				EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */,
+				EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */,
+				EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */,
+			);
+			path = "Easy Measure";
+			sourceTree = "<group>";
+		};
+		EBBD8B5A193F4D360074321B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD8B5B193F4D360074321B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBBD8B6C193F4D360074321B /* Easy MeasureTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD8B6F193F4D370074321B /* Easy_MeasureTests.swift */,
+				EBBD8B6D193F4D370074321B /* Supporting Files */,
+			);
+			path = "Easy MeasureTests";
+			sourceTree = "<group>";
+		};
+		EBBD8B6D193F4D370074321B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBBD8B6E193F4D370074321B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBBD8B56193F4D360074321B /* Easy Measure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBD8B73193F4D370074321B /* Build configuration list for PBXNativeTarget "Easy Measure" */;
+			buildPhases = (
+				EBBD8B53193F4D360074321B /* Sources */,
+				EBBD8B54193F4D360074321B /* Frameworks */,
+				EBBD8B55193F4D360074321B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy Measure";
+			productName = "Easy Measure";
+			productReference = EBBD8B57193F4D360074321B /* Easy Measure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBBD8B68193F4D360074321B /* Easy MeasureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBD8B76193F4D370074321B /* Build configuration list for PBXNativeTarget "Easy MeasureTests" */;
+			buildPhases = (
+				EBBD8B65193F4D360074321B /* Sources */,
+				EBBD8B66193F4D360074321B /* Frameworks */,
+				EBBD8B67193F4D360074321B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBBD8B6B193F4D360074321B /* PBXTargetDependency */,
+			);
+			name = "Easy MeasureTests";
+			productName = "Easy MeasureTests";
+			productReference = EBBD8B69193F4D360074321B /* Easy MeasureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBBD8B4F193F4D360074321B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = CosmicByte;
+				TargetAttributes = {
+					EBBD8B56193F4D360074321B = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = JDJKS788L2;
+					};
+					EBBD8B68193F4D360074321B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = EBBD8B56193F4D360074321B;
+					};
+				};
+			};
+			buildConfigurationList = EBBD8B52193F4D360074321B /* Build configuration list for PBXProject "Easy Measure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBBD8B4E193F4D360074321B;
+			productRefGroup = EBBD8B58193F4D360074321B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBBD8B56193F4D360074321B /* Easy Measure */,
+				EBBD8B68193F4D360074321B /* Easy MeasureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBBD8B55193F4D360074321B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3776F9194005DD0078BC99 /* 58.png in Resources */,
+				EB3776F0194005D70078BC99 /* done-p.png in Resources */,
+				EB3776F1194005D70078BC99 /* done.png in Resources */,
+				EB3776F4194005D70078BC99 /* stop-measuring-p.png in Resources */,
+				EB2F802F193FECEB005E8FEE /* logo.png in Resources */,
+				EBBD8B62193F4D360074321B /* Main.storyboard in Resources */,
+				EB3776F5194005D70078BC99 /* stop-measuring.png in Resources */,
+				EB3776FA194005DD0078BC99 /* 80.png in Resources */,
+				EB3776F3194005D70078BC99 /* measure-distance.png in Resources */,
+				EB3776FB194005DD0078BC99 /* 120.png in Resources */,
+				EB3776F2194005D70078BC99 /* measure-distance-p.png in Resources */,
+				EBBD8B64193F4D360074321B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBD8B67193F4D360074321B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBBD8B53193F4D360074321B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBD8B5D193F4D360074321B /* AppDelegate.swift in Sources */,
+				EBDA0D5A193FBE8F00C086E7 /* MeasuringViewController.swift in Sources */,
+				EBBD8B7A193F4DE80074321B /* MenuViewController.swift in Sources */,
+				EBDA0D5C193FBE9C00C086E7 /* ResultsViewController.swift in Sources */,
+				EB2F8024193FE9E8005E8FEE /* InfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBD8B65193F4D360074321B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBD8B70193F4D370074321B /* Easy_MeasureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBBD8B6B193F4D360074321B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBBD8B56193F4D360074321B /* Easy Measure */;
+			targetProxy = EBBD8B6A193F4D360074321B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBBD8B60193F4D360074321B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBD8B61193F4D360074321B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBBD8B71193F4D370074321B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBBD8B72193F4D370074321B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBBD8B74193F4D370074321B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Easy Measure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBBD8B75193F4D370074321B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Easy Measure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EBBD8B77193F4D370074321B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Easy Measure.app/Easy Measure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Easy MeasureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		EBBD8B78193F4D370074321B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Easy Measure.app/Easy Measure";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Easy MeasureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBBD8B52193F4D360074321B /* Build configuration list for PBXProject "Easy Measure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBD8B71193F4D370074321B /* Debug */,
+				EBBD8B72193F4D370074321B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBD8B73193F4D370074321B /* Build configuration list for PBXNativeTarget "Easy Measure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBD8B74193F4D370074321B /* Debug */,
+				EBBD8B75193F4D370074321B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBD8B76193F4D370074321B /* Build configuration list for PBXNativeTarget "Easy MeasureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBD8B77193F4D370074321B /* Debug */,
+				EBBD8B78193F4D370074321B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBBD8B4F193F4D360074321B /* Project object */;
+}

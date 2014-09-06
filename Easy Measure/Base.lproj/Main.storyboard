@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cYP-JB-197">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-Ee-Iyj">
+                                <rect key="frame" x="20" y="36" width="280" height="100"/>
+                            </imageView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSU-1d-4ZW">
+                                <rect key="frame" x="60" y="348" width="200" height="200"/>
+                                <state key="normal" image="measure-distance.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="measure-distance-p.png"/>
+                                <connections>
+                                    <action selector="measureDistance:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MlS-kT-6ml"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-7g-Nhp">
+                                <rect key="frame" x="278" y="526" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Tl-vt-YpQ" kind="push" id="smV-fE-YFk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ygq-aM-b1b"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="480" height="480"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="infoButton" destination="Oqk-7g-Nhp" id="PZh-NO-E6d"/>
+                        <outlet property="measureButton" destination="MSU-1d-4ZW" id="87m-2W-AjK"/>
+                        <segue destination="jfu-Q5-7rR" kind="push" identifier="measuringSegue" id="Ryl-xR-6k6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="211"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="GSR-ve-c1i">
+            <objects>
+                <viewController id="3Tl-vt-YpQ" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dP2-Ko-yAM"/>
+                        <viewControllerLayoutGuide type="bottom" id="zsm-n1-Cg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f5o-2I-uSb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpo-sv-fwF">
+                                <rect key="frame" x="60" y="340" width="200" height="200"/>
+                                <state key="normal" image="done.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="done-p.png"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="3Tl-vt-YpQ" eventType="touchUpInside" id="DgM-9H-QJ1"/>
+                                </connections>
+                            </button>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Measurements based upon GPS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="209" translatesAutoresizingMaskIntoConstraints="NO" id="6ay-gh-Lkv">
+                                <rect key="frame" x="56" y="523" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results may vary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqr-Bs-1hf">
+                                <rect key="frame" x="56" y="537" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl2-tE-OD2">
+                                <rect key="frame" x="20" y="20" width="280" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metric System" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-2Q-goj">
+                                <rect key="frame" x="20" y="89" width="150" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Straight Line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfX-UA-lLI">
+                                <rect key="frame" x="20" y="126" width="150" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voiceover" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plS-u9-Rtr">
+                                <rect key="frame" x="20" y="163" width="150" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWH-C3-Tex">
+                                <rect key="frame" x="251" y="89" width="51" height="31"/>
+                            </switch>
+                            <switch appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldp-9M-nD4">
+                                <rect key="frame" x="251" y="126" width="51" height="31"/>
+                            </switch>
+                            <switch appearanceType="aqua" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1N-gk-Qks">
+                                <rect key="frame" x="251" y="163" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="disclaimerOne" destination="6ay-gh-Lkv" id="0dy-dH-8VK"/>
+                        <outlet property="disclaimerTwo" destination="Bqr-Bs-1hf" id="Vjq-FV-zTa"/>
+                        <outlet property="doneButton" destination="Mpo-sv-fwF" id="AP4-IS-tFf"/>
+                        <outlet property="metricSwitch" destination="oWH-C3-Tex" id="Lr8-e4-1ob"/>
+                        <outlet property="straightSwitch" destination="ldp-9M-nD4" id="d57-a3-fWW"/>
+                        <outlet property="voiceoverSwitch" destination="n1N-gk-Qks" id="el5-wP-pxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-v8-qDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="940"/>
+        </scene>
+        <!--Measuring View Controller-->
+        <scene sceneID="u1Q-1y-8FF">
+            <objects>
+                <viewController id="jfu-Q5-7rR" customClass="MeasuringViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nak-dY-bgY"/>
+                        <viewControllerLayoutGuide type="bottom" id="r6v-Vf-Zhh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2JZ-1I-1ME">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqe-iC-DoX">
+                                <rect key="frame" x="20" y="36" width="280" height="92"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB8-oH-Tuz">
+                                <rect key="frame" x="60" y="348" width="200" height="200"/>
+                                <state key="normal" image="stop-measuring.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="stop-measuring-p.png"/>
+                                <connections>
+                                    <segue destination="8uN-pa-hax" kind="push" id="kft-XR-fr8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="estimateText" destination="qqe-iC-DoX" id="YmZ-Ky-f5n"/>
+                        <outlet property="stopButton" destination="MB8-oH-Tuz" id="XHg-ff-iBH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCZ-Pc-c85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="211"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="WnR-JV-L7V">
+            <objects>
+                <viewController id="8uN-pa-hax" customClass="ResultsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s58-Vp-niu"/>
+                        <viewControllerLayoutGuide type="bottom" id="LO5-PH-J1d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bt0-IP-zdu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-JR-7sV">
+                                <rect key="frame" x="60" y="348" width="200" height="200"/>
+                                <state key="normal" image="done.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="done-p.png"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="8uN-pa-hax" eventType="touchUpInside" id="wyp-UB-A2x"/>
+                                </connections>
+                            </button>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The distance measured was" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-m7-Lrm">
+                                <rect key="frame" x="20" y="60" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="approximately 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcS-kF-J3C">
+                                <rect key="frame" x="20" y="81" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="fcS-kF-J3C" id="500-3e-x4X"/>
+                        <outlet property="doneButton" destination="xEx-JR-7sV" id="ZEa-gg-OQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQR-0B-fHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173" y="211"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TIx-iR-LQu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cYP-JB-197" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sB0-Q5-2G7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Czc-0l-4ub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAl-az-sAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="done-p.png" width="720" height="720"/>
+        <image name="done.png" width="720" height="720"/>
+        <image name="logo.png" width="1456" height="380"/>
+        <image name="measure-distance-p.png" width="720" height="720"/>
+        <image name="measure-distance.png" width="720" height="720"/>
+        <image name="stop-measuring-p.png" width="720" height="720"/>
+        <image name="stop-measuring.png" width="720" height="720"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
