@@ -11,13 +11,13 @@ import AVFoundation
 
 class InfoViewController: UIViewController {
 
-    @IBOutlet var metricSwitch: UISwitch
-    @IBOutlet var straightSwitch: UISwitch
-    @IBOutlet var voiceoverSwitch: UISwitch
+    @IBOutlet var metricSwitch: UISwitch!
+    @IBOutlet var straightSwitch: UISwitch!
+    @IBOutlet var voiceoverSwitch: UISwitch!
     
-    @IBOutlet var doneButton: UIButton
-    @IBOutlet var disclaimerOne: UILabel
-    @IBOutlet var disclaimerTwo: UILabel
+    @IBOutlet var doneButton: UIButton!
+    @IBOutlet var disclaimerOne: UILabel!
+    @IBOutlet var disclaimerTwo: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,6 @@ class InfoViewController: UIViewController {
         defaults.setBool(straightSwitch.on, forKey:"straight")
         defaults.setBool(voiceoverSwitch.on, forKey:"voiceover")
         defaults.synchronize()
-        navigationController.popViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
     }
 }

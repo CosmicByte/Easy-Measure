@@ -11,8 +11,8 @@ import AVFoundation
 
 class ResultsViewController: UIViewController {
 
-    @IBOutlet var distanceLabel: UILabel
-    @IBOutlet var doneButton: UIButton
+    @IBOutlet var distanceLabel: UILabel!
+    @IBOutlet var doneButton: UIButton!
     
     var distance: Double = 0.0
     let defaults = NSUserDefaults.standardUserDefaults()
@@ -42,6 +42,6 @@ class ResultsViewController: UIViewController {
     }
     
     @IBAction func doneButton(sender: AnyObject) {
-        navigationController.popToRootViewControllerAnimated(true)
+        navigationController?.popToRootViewControllerAnimated(true)
     }
 }

@@ -11,8 +11,8 @@ import CoreLocation
 
 class MenuViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet var measureButton: UIButton
-    @IBOutlet var infoButton: UIButton
+    @IBOutlet var measureButton: UIButton!
+    @IBOutlet var infoButton: UIButton!
     
     var locationReceived = false
     var locationManager = CLLocationManager()
@@ -34,7 +34,7 @@ class MenuViewController: UIViewController, CLLocationManagerDelegate {
             defaults.synchronize()
         }
         
-        navigationController.navigationBarHidden = true
+        navigationController?.navigationBarHidden = true
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,7 +45,7 @@ class MenuViewController: UIViewController, CLLocationManagerDelegate {
         infoButton.frame = CGRectMake(infoButton.frame.origin.x, infoButton.frame.origin.y - moveUp, infoButton.frame.size.width, infoButton.frame.size.height)
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: AnyObject[]!) {
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         locationReceived = true
     }
     

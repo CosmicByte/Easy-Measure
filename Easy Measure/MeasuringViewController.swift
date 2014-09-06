@@ -11,8 +11,8 @@ import CoreLocation
 
 class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet var estimateText: UILabel
-    @IBOutlet var stopButton: UIButton
+    @IBOutlet var estimateText: UILabel!
+    @IBOutlet var stopButton: UIButton!
     
     var locationManager = CLLocationManager()
     var firstLocation = CLLocation()
@@ -39,20 +39,20 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
         stopButton.frame = CGRectMake(stopButton.frame.origin.x, stopButton.frame.origin.y - moveUp, stopButton.frame.size.width, stopButton.frame.size.height)
     }
     
-    func locationManager(manager:CLLocationManager!, didUpdateLocations locations:AnyObject[]!) {
+    func locationManager(manager:CLLocationManager!, didUpdateLocations locations:[AnyObject]!) {
         var location: CLLocation = locations[locations.count-1] as CLLocation
         
         if -location.timestamp.timeIntervalSinceNow > 2.0 {
             return
         }
         
-        if location == nil {
-            if firstUpdate {
+        if (location as AnyObject? === nil) {
+            if (firstUpdate) {
                 firstUpdate = false
                 firstLocation = location
             } else {
                 secondLocation = location
-                if straight {
+                if (straight) {
                     distance = firstLocation.distanceFromLocation(secondLocation) * (metric ? 1 : 1.0936)
                 } else {
                     distance += firstLocation.distanceFromLocation(secondLocation) * (metric ? 1 : 1.0936)
@@ -61,11 +61,12 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
-        estimateText.text = String(distance) + (metric ? " m." : " yds.")
+        var units = metric ? "m" : "yds"
+        estimateText.text = "\(distance) \(units)."
         oldDistance = distance
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination: ResultsViewController = segue.destinationViewController as ResultsViewController
         destination.sendDistance(distance)
     }
