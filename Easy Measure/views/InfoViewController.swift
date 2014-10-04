@@ -28,15 +28,6 @@ class InfoViewController: UIViewController {
         voiceoverSwitch.setOn(defaults.boolForKey("voiceover"), animated:false)
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        var moveUp = 568 - UIScreen.mainScreen().bounds.height
-        doneButton.frame = CGRectMake(doneButton.frame.origin.x, doneButton.frame.origin.y - moveUp, doneButton.frame.size.width, doneButton.frame.size.height)
-        disclaimerOne.frame = CGRectMake(disclaimerOne.frame.origin.x, disclaimerOne.frame.origin.y - moveUp, disclaimerOne.frame.size.width, disclaimerOne.frame.size.height)
-        disclaimerTwo.frame = CGRectMake(disclaimerTwo.frame.origin.x, disclaimerTwo.frame.origin.y - moveUp, disclaimerTwo.frame.size.width, disclaimerTwo.frame.size.height)
-    }
-    
     @IBAction func doneButton(sender: AnyObject) {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(metricSwitch.on, forKey:"metric")

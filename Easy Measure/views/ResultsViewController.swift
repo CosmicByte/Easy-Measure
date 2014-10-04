@@ -30,13 +30,6 @@ class ResultsViewController: UIViewController {
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        var moveUp = 568 - UIScreen.mainScreen().bounds.height
-        doneButton.frame = CGRectMake(doneButton.frame.origin.x, doneButton.frame.origin.y - moveUp, doneButton.frame.size.width, doneButton.frame.size.height)
-    }
-    
     func sendDistance(sentDistance: Double) {
         distance = sentDistance
     }

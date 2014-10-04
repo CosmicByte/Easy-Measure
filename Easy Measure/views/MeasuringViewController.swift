@@ -32,13 +32,6 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        var moveUp = 568 - UIScreen.mainScreen().bounds.height
-        stopButton.frame = CGRectMake(stopButton.frame.origin.x, stopButton.frame.origin.y - moveUp, stopButton.frame.size.width, stopButton.frame.size.height)
-    }
-    
     func locationManager(manager:CLLocationManager!, didUpdateLocations locations:[AnyObject]!) {
         var location: CLLocation = locations[locations.count-1] as CLLocation
         
