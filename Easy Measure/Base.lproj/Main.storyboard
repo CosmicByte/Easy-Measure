@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-Ee-Iyj">
-                                <rect key="frame" x="20" y="36" width="280" height="100"/>
+                                <rect key="frame" x="20" y="48" width="280" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GrS-Ee-Iyj" secondAttribute="height" multiplier="14:5" id="HKl-ho-hdl"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                             <constraint firstItem="zjT-Nw-1yi" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="60O-gs-Mcu"/>
                             <constraint firstAttribute="trailing" secondItem="MSU-1d-4ZW" secondAttribute="trailing" constant="60" id="AUu-g0-f5K"/>
                             <constraint firstAttribute="trailing" secondItem="GrS-Ee-Iyj" secondAttribute="trailing" constant="20" id="AYf-jd-LXe"/>
-                            <constraint firstItem="GrS-Ee-Iyj" firstAttribute="top" secondItem="zjT-Nw-1yi" secondAttribute="bottom" constant="16" id="Buh-fL-V4M"/>
+                            <constraint firstItem="GrS-Ee-Iyj" firstAttribute="top" secondItem="zjT-Nw-1yi" secondAttribute="bottom" constant="28" id="Buh-fL-V4M"/>
                             <constraint firstItem="GrS-Ee-Iyj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="L9s-6P-9cE"/>
                             <constraint firstAttribute="trailing" secondItem="Oqk-7g-Nhp" secondAttribute="trailing" constant="20" id="VGn-ib-8ff"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Oqk-7g-Nhp" secondAttribute="bottom" constant="20" id="YUm-G3-wXJ"/>

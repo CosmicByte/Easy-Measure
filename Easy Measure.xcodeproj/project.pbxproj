@@ -49,8 +49,6 @@
 		EB3776F6194005DD0078BC99 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = images/icons/58.png; sourceTree = "<group>"; };
 		EB3776F7194005DD0078BC99 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = images/icons/80.png; sourceTree = "<group>"; };
 		EB3776F8194005DD0078BC99 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = images/icons/120.png; sourceTree = "<group>"; };
-		EB80C6F319E01DFE00D477F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EB80C6F519E01F1200D477F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EB80C6F819E023B600D477F2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = views/InfoViewController.swift; sourceTree = "<group>"; };
 		EB80C6F919E023B600D477F2 /* MeasuringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeasuringViewController.swift; path = views/MeasuringViewController.swift; sourceTree = "<group>"; };
 		EB80C6FA19E023B600D477F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = views/MenuViewController.swift; sourceTree = "<group>"; };
@@ -131,8 +129,6 @@
 		EBBD8B4E193F4D360074321B = {
 			isa = PBXGroup;
 			children = (
-				EB80C6F519E01F1200D477F2 /* CoreGraphics.framework */,
-				EB80C6F319E01DFE00D477F2 /* Foundation.framework */,
 				EBBD8B59193F4D360074321B /* Easy Measure */,
 				EBBD8B6C193F4D360074321B /* Easy MeasureTests */,
 				EBBD8B58193F4D360074321B /* Products */,
