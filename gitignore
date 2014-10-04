@@ -1,4 +1,4 @@
-# Created by http://www.gitignore.io
+# Created by https://www.gitignore.io
 
 ### Xcode ###
 build/
@@ -23,7 +23,8 @@ DerivedData
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -38,4 +39,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
