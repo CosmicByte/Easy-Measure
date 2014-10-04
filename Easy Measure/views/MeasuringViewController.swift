@@ -38,8 +38,8 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
             firstUpdate = false
             location = newLocation
         } else {
-            var newDistance = location.distanceFromLocation(newLocation) * (metric() ? 1 : 1.0936)
-            if (straight()) {
+            var newDistance = location.distanceFromLocation(newLocation) * (defaults.boolForKey(metric) ? 1 : 1.0936)
+            if (defaults.boolForKey(straight)) {
                 distance = newDistance
             } else {
                 distance += newDistance
@@ -47,7 +47,7 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
-        estimateText.text = "\(distance) " + (metric() ? "m" : "yds") + "."
+        estimateText.text = "\(distance) " + (defaults.boolForKey(metric) ? "m" : "yds") + "."
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

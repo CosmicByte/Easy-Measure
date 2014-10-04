@@ -19,10 +19,10 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        distanceLabel.text = "approximately \(distance) " + (metric() ? "m." : "yds.") + "."
+        distanceLabel.text = "approximately \(distance) " + (defaults.boolForKey(metric) ? "m." : "yds.") + "."
         
         if defaults.boolForKey("voiceover") {
-            var utterance: AVSpeechUtterance = AVSpeechUtterance(string: "The distance measured was approximately \(distance) " + (metric() ? "meters." : "yards."))
+            var utterance: AVSpeechUtterance = AVSpeechUtterance(string: "The distance measured was approximately \(distance) " + (defaults.boolForKey(metric) ? "meters." : "yards."))
             utterance.rate = 0.02
             var synthesizer = AVSpeechSynthesizer()
             synthesizer.speakUtterance(utterance)

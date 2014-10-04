@@ -18,9 +18,9 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        straightSwitch.setOn(straight(), animated: false)
-        metricSwitch.setOn(metric(), animated: false)
-        voiceoverSwitch.setOn(voiceover(), animated: false)
+        straightSwitch.setOn(defaults.boolForKey(straight), animated: false)
+        metricSwitch.setOn(defaults.boolForKey(metric), animated: false)
+        voiceoverSwitch.setOn(defaults.boolForKey(voiceover), animated: false)
     }
     
     @IBAction func doneButton(sender: AnyObject) {
