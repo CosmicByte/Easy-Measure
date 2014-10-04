@@ -12,16 +12,11 @@ import CoreLocation
 class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet var estimateText: UILabel!
-    @IBOutlet var stopButton: UIButton!
     
     var locationManager = CLLocationManager()
-    var firstLocation = CLLocation()
-    var secondLocation = CLLocation()
-    var oldDistance = 0.0
+    var location = CLLocation()
     var distance = 0.0
     var firstUpdate = true
-    var metric = NSUserDefaults().boolForKey("metric")
-    var straight = NSUserDefaults().boolForKey("straight")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,34 +28,30 @@ class MeasuringViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager:CLLocationManager!, didUpdateLocations locations:[AnyObject]!) {
-        var location: CLLocation = locations[locations.count-1] as CLLocation
+        var newLocation: CLLocation = locations[locations.count-1] as CLLocation
         
-        if -location.timestamp.timeIntervalSinceNow > 2.0 {
+        if -newLocation.timestamp.timeIntervalSinceNow > 2.0 {
             return
         }
         
-        if (location as AnyObject? === nil) {
-            if (firstUpdate) {
-                firstUpdate = false
-                firstLocation = location
+        if (firstUpdate) {
+            firstUpdate = false
+            location = newLocation
+        } else {
+            var newDistance = location.distanceFromLocation(newLocation) * (metric() ? 1 : 1.0936)
+            if (straight()) {
+                distance = newDistance
             } else {
-                secondLocation = location
-                if (straight) {
-                    distance = firstLocation.distanceFromLocation(secondLocation) * (metric ? 1 : 1.0936)
-                } else {
-                    distance += firstLocation.distanceFromLocation(secondLocation) * (metric ? 1 : 1.0936)
-                    firstLocation = location
-                }
+                distance += newDistance
+                location = newLocation
             }
         }
         
-        var units = metric ? "m" : "yds"
-        estimateText.text = "\(distance) \(units)."
-        oldDistance = distance
+        estimateText.text = "\(distance) " + (metric() ? "m" : "yds") + "."
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination: ResultsViewController = segue.destinationViewController as ResultsViewController
-        destination.sendDistance(distance)
+        destination.distance = distance
     }
 }

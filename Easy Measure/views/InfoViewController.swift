@@ -15,25 +15,18 @@ class InfoViewController: UIViewController {
     @IBOutlet var straightSwitch: UISwitch!
     @IBOutlet var voiceoverSwitch: UISwitch!
     
-    @IBOutlet var doneButton: UIButton!
-    @IBOutlet var disclaimerOne: UILabel!
-    @IBOutlet var disclaimerTwo: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        straightSwitch.setOn(defaults.boolForKey("straight"), animated:false)
-        metricSwitch.setOn(defaults.boolForKey("metric"), animated:false)
-        voiceoverSwitch.setOn(defaults.boolForKey("voiceover"), animated:false)
+        straightSwitch.setOn(straight(), animated: false)
+        metricSwitch.setOn(metric(), animated: false)
+        voiceoverSwitch.setOn(voiceover(), animated: false)
     }
     
     @IBAction func doneButton(sender: AnyObject) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setBool(metricSwitch.on, forKey:"metric")
-        defaults.setBool(straightSwitch.on, forKey:"straight")
-        defaults.setBool(voiceoverSwitch.on, forKey:"voiceover")
-        defaults.synchronize()
-        navigationController?.popViewControllerAnimated(true)
+        defaults.setBool(metricSwitch.on, forKey: "metric")
+        defaults.setBool(straightSwitch.on, forKey: "straight")
+        defaults.setBool(voiceoverSwitch.on, forKey: "voiceover")
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

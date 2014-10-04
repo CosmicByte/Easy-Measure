@@ -235,9 +235,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="disclaimerOne" destination="6ay-gh-Lkv" id="0dy-dH-8VK"/>
-                        <outlet property="disclaimerTwo" destination="Bqr-Bs-1hf" id="Vjq-FV-zTa"/>
-                        <outlet property="doneButton" destination="Mpo-sv-fwF" id="AP4-IS-tFf"/>
                         <outlet property="metricSwitch" destination="oWH-C3-Tex" id="Lr8-e4-1ob"/>
                         <outlet property="straightSwitch" destination="ldp-9M-nD4" id="d57-a3-fWW"/>
                         <outlet property="voiceoverSwitch" destination="n1N-gk-Qks" id="el5-wP-pxp"/>
@@ -307,7 +304,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="estimateText" destination="qqe-iC-DoX" id="YmZ-Ky-f5n"/>
-                        <outlet property="stopButton" destination="MB8-oH-Tuz" id="XHg-ff-iBH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCZ-Pc-c85" userLabel="First Responder" sceneMemberID="firstResponder"/>
