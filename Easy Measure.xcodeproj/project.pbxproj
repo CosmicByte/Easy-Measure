@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB2F8024193FE9E8005E8FEE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */; };
 		EB2F802F193FECEB005E8FEE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB2F8028193FECEB005E8FEE /* logo.png */; };
 		EB3776F0194005D70078BC99 /* done-p.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EA194005D70078BC99 /* done-p.png */; };
 		EB3776F1194005D70078BC99 /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776EB194005D70078BC99 /* done.png */; };
@@ -18,13 +17,15 @@
 		EB3776F9194005DD0078BC99 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F6194005DD0078BC99 /* 58.png */; };
 		EB3776FA194005DD0078BC99 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F7194005DD0078BC99 /* 80.png */; };
 		EB3776FB194005DD0078BC99 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3776F8194005DD0078BC99 /* 120.png */; };
+		EB80C6FC19E023B600D477F2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80C6F819E023B600D477F2 /* InfoViewController.swift */; };
+		EB80C6FD19E023B600D477F2 /* MeasuringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80C6F919E023B600D477F2 /* MeasuringViewController.swift */; };
+		EB80C6FE19E023B600D477F2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80C6FA19E023B600D477F2 /* MenuViewController.swift */; };
+		EB80C6FF19E023B600D477F2 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80C6FB19E023B600D477F2 /* ResultsViewController.swift */; };
+		EB80C70119E023C000D477F2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80C70019E023C000D477F2 /* Common.swift */; };
 		EBBD8B5D193F4D360074321B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B5C193F4D360074321B /* AppDelegate.swift */; };
 		EBBD8B62193F4D360074321B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBD8B60193F4D360074321B /* Main.storyboard */; };
 		EBBD8B64193F4D360074321B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBD8B63193F4D360074321B /* Images.xcassets */; };
 		EBBD8B70193F4D370074321B /* Easy_MeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B6F193F4D370074321B /* Easy_MeasureTests.swift */; };
-		EBBD8B7A193F4DE80074321B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD8B79193F4DE80074321B /* MenuViewController.swift */; };
-		EBDA0D5A193FBE8F00C086E7 /* MeasuringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */; };
-		EBDA0D5C193FBE9C00C086E7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		EB2F8028193FECEB005E8FEE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = images/logo.png; sourceTree = "<group>"; };
 		EB3776EA194005D70078BC99 /* done-p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "done-p.png"; path = "images/buttons/done-p.png"; sourceTree = "<group>"; };
 		EB3776EB194005D70078BC99 /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = done.png; path = images/buttons/done.png; sourceTree = "<group>"; };
@@ -49,6 +49,13 @@
 		EB3776F6194005DD0078BC99 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = images/icons/58.png; sourceTree = "<group>"; };
 		EB3776F7194005DD0078BC99 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = images/icons/80.png; sourceTree = "<group>"; };
 		EB3776F8194005DD0078BC99 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = images/icons/120.png; sourceTree = "<group>"; };
+		EB80C6F319E01DFE00D477F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB80C6F519E01F1200D477F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB80C6F819E023B600D477F2 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = views/InfoViewController.swift; sourceTree = "<group>"; };
+		EB80C6F919E023B600D477F2 /* MeasuringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeasuringViewController.swift; path = views/MeasuringViewController.swift; sourceTree = "<group>"; };
+		EB80C6FA19E023B600D477F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = views/MenuViewController.swift; sourceTree = "<group>"; };
+		EB80C6FB19E023B600D477F2 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = views/ResultsViewController.swift; sourceTree = "<group>"; };
+		EB80C70019E023C000D477F2 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EBBD8B57193F4D360074321B /* Easy Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBD8B5B193F4D360074321B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBD8B5C193F4D360074321B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +64,6 @@
 		EBBD8B69193F4D360074321B /* Easy MeasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy MeasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBD8B6E193F4D370074321B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBD8B6F193F4D370074321B /* Easy_MeasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_MeasureTests.swift; sourceTree = "<group>"; };
-		EBBD8B79193F4DE80074321B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringViewController.swift; sourceTree = "<group>"; };
-		EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +117,22 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
+		EB80C6F719E0239A00D477F2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EB80C6F819E023B600D477F2 /* InfoViewController.swift */,
+				EB80C6F919E023B600D477F2 /* MeasuringViewController.swift */,
+				EB80C6FA19E023B600D477F2 /* MenuViewController.swift */,
+				EB80C6FB19E023B600D477F2 /* ResultsViewController.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		EBBD8B4E193F4D360074321B = {
 			isa = PBXGroup;
 			children = (
+				EB80C6F519E01F1200D477F2 /* CoreGraphics.framework */,
+				EB80C6F319E01DFE00D477F2 /* Foundation.framework */,
 				EBBD8B59193F4D360074321B /* Easy Measure */,
 				EBBD8B6C193F4D360074321B /* Easy MeasureTests */,
 				EBBD8B58193F4D360074321B /* Products */,
@@ -134,15 +151,13 @@
 		EBBD8B59193F4D360074321B /* Easy Measure */ = {
 			isa = PBXGroup;
 			children = (
+				EB80C6F719E0239A00D477F2 /* views */,
 				EB2F8025193FECE0005E8FEE /* images */,
 				EBBD8B5C193F4D360074321B /* AppDelegate.swift */,
 				EBBD8B60193F4D360074321B /* Main.storyboard */,
 				EBBD8B63193F4D360074321B /* Images.xcassets */,
 				EBBD8B5A193F4D360074321B /* Supporting Files */,
-				EBBD8B79193F4DE80074321B /* MenuViewController.swift */,
-				EBDA0D59193FBE8F00C086E7 /* MeasuringViewController.swift */,
-				EBDA0D5B193FBE9C00C086E7 /* ResultsViewController.swift */,
-				EB2F8023193FE9E8005E8FEE /* InfoViewController.swift */,
+				EB80C70019E023C000D477F2 /* Common.swift */,
 			);
 			path = "Easy Measure";
 			sourceTree = "<group>";
@@ -282,11 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB80C6FC19E023B600D477F2 /* InfoViewController.swift in Sources */,
+				EB80C6FD19E023B600D477F2 /* MeasuringViewController.swift in Sources */,
 				EBBD8B5D193F4D360074321B /* AppDelegate.swift in Sources */,
-				EBDA0D5A193FBE8F00C086E7 /* MeasuringViewController.swift in Sources */,
-				EBBD8B7A193F4DE80074321B /* MenuViewController.swift in Sources */,
-				EBDA0D5C193FBE9C00C086E7 /* ResultsViewController.swift in Sources */,
-				EB2F8024193FE9E8005E8FEE /* InfoViewController.swift in Sources */,
+				EB80C6FF19E023B600D477F2 /* ResultsViewController.swift in Sources */,
+				EB80C70119E023C000D477F2 /* Common.swift in Sources */,
+				EB80C6FE19E023B600D477F2 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

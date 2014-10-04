@@ -23,9 +23,9 @@ class MenuViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        var defaults = NSUserDefaults.standardUserDefaults()
         if !defaults.boolForKey("firstLaunch") {
             defaults.setBool(true, forKey:"firstLaunch")
             defaults.setBool(false, forKey:"metric")
@@ -35,14 +35,6 @@ class MenuViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         navigationController?.navigationBarHidden = true
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        var moveUp = 568 - UIScreen.mainScreen().bounds.height
-        measureButton.frame = CGRectMake(measureButton.frame.origin.x, measureButton.frame.origin.y - moveUp, measureButton.frame.size.width, measureButton.frame.size.height)
-        infoButton.frame = CGRectMake(infoButton.frame.origin.x, infoButton.frame.origin.y - moveUp, infoButton.frame.size.width, infoButton.frame.size.height)
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
