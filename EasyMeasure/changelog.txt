@@ -1,0 +1,54 @@
+EasyMeasure 1.2
+
++ Added a voiceover option (iOS 7+)
+
+==================================================
+
+EasyMeasure 1.1.4
+
+* Gave the app an iOS 7 look and feel
+* The app now supports iOS 6.0+
+* Fixed a crash bug on the measuring page
+* Made the measurements far more accurate
+
+==================================================
+
+EasyMeasure 1.1.3
+
+* Re-did analytics code
+* Fixed incorrect measurements when starting to measure
+
+==================================================
+
+EasyMeasure 1.1.2
+
+* Now supporting iOS 5.0+ (rather than 6.1+)
+
+==================================================
+
+EasyMeasure 1.1.1
+
+* Reduced page transition time overall
+* Optimized views some more
+- Removed the recalibrating GPS page, it's now a background script on the menu page
+
+==================================================
+
+EasyMeasure 1.1
+
++ We now have a site for EasyMeasure! Check it out at easymeasure.co
++ EasyMeasure is also available on the Android Market!
+
++ Added analytics, may be available for public display soon
++ Added a view that recalibrates the GPS, making measure results more accurate
++ Added an alert that tells you if the app is denied access your current location, not allowing the app to work
++ Added an option to measure either in a straight line or as you're walking
+* Balanced page transition time for the info button
+* Further optimized the app for the iPhone 5
+- Removed the gloss effect from the app icon
+
+==================================================
+
+EasyMeasure 1.0
+
++ Initial release
